@@ -1,0 +1,65 @@
+ .Discover {
+  text-align: center;
+  padding: 80px 20px;
+
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(/aqua.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.Discover-image {
+display: flex;
+  position: relative;
+  padding-left: 00px;
+}
+
+.header-one1 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #e8eff6;
+  font-weight: bold;
+}
+.paragraph11 {
+  font-size: 1.2rem;
+  margin-bottom: 60px;
+  color: #e8eff6;
+} 
+
+
+/* Shrimp Section */
+.shrimp {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #ffffff;
+  }
+  
+  .shrimp-image {
+    margin: 0 auto 20px auto;
+    border: 4px solid #66bb6a;
+    object-fit: cover;
+  }
+  
+  .header-two {
+    font-size: 1.5rem;
+    color: #388e3c;
+    margin-bottom: 10px;
+  }
+  
+  .header-three {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #1b5e20;
+    margin-bottom: 30px;
+  }
+  .button4 {
+    background-color: #388e3c;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+  }

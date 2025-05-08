@@ -1,0 +1,159 @@
+/* Main container */
+.featured-products {
+  padding: 2rem;
+  margin: 0 auto;
+  max-width: 1200px;
+  overflow: hidden;
+}
+
+/* Section title */
+.section-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Carousel container */
+.carousel-container {
+  position: relative;
+  padding: 1rem 0;
+}
+
+/* Scrollable carousel */
+.carousel {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding: 1rem 0;
+  -webkit-overflow-scrolling: touch;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+/* Individual product cards */
+.card.product-card {
+  scroll-snap-align: start;
+  flex: 0 0 auto;
+  width: 280px;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f0f0f0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  aspect-ratio: 5 / 4;
+  cursor: pointer;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Button styles */
+.button3{
+  background-color: #000000;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.button3:hover {
+  background-color: #000000;
+}
+
+/* Carousel navigation buttons */
+.carousel-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.carousel-nav button {
+  background: #499e5f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  transition: background 0.3s;
+}
+
+.carousel-nav button:hover {
+  background: #0056b9;
+}
+
+/* Popup overlay styles */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.popup-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  position: relative;
+}
+
+.popup-img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.popup-close-btn {
+  background-color: #ff3b3b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.popup-close-btn:hover {
+  background-color: #d62828;
+}

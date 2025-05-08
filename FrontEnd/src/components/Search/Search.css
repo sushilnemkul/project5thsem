@@ -1,0 +1,83 @@
+/* Search button */
+.search-btn {
+  margin: 100px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Overlay */
+.overlayy {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.3s ease forwards;
+  z-index: 999;
+}
+
+/* Popup */
+.popup {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  position: relative;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  animation: scaleIn 0.2s ease forwards;
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: #555;
+}
+
+/* Search area */
+.search-area {
+  display: flex;
+  margin-top: 20px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.submit-btn {
+  padding: 8px 12px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from { transform: scale(0.95); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
